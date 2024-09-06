@@ -9,8 +9,9 @@
     <Grid ShowGridLines="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition MinHeight="40"></RowDefinition>
+            <RowDefinition MinHeight="40"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions> 
         <Grid.ColumnDefinitions>
@@ -18,5 +19,7 @@
             <ColumnDefinition MinWidth="200" Width="2*"></ColumnDefinition>
             <ColumnDefinition MinWidth="100"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <GridSplitter Grid.Row="3" Grid.ColumnSpan="3" ShowsPreview="False" Height="6"
+            HorizontalAlignment="Stretch" VerticalAlignment="Center" />
     </Grid>
 </Window>
